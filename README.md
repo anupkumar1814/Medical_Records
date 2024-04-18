@@ -1,3 +1,6 @@
+<img width="959" alt="website_view" src="https://github.com/anupkumar1814/Medical_Records/assets/115176086/4605781c-4851-4685-869b-821b883c12cb">
+
+
 # Steps for Cloning and Running the GitHub Project on localhost system
 
 This guide provides step-by-step instructions for cloning the GitHub project and running it on another system.
