@@ -44,4 +44,5 @@ Before proceeding, ensure that the following software is installed on the target
     command -> `npm start`
    - Then navigate to client folder in different terminal and start the clent side by running the following command inside the client folder:
     comand  -> `npm start`
-   - This will open the website on localhost on default browser.
+   - This will open the website on localhost on default browser or you can type url `http://localhost:3000/` in browser if it doesnt open automatically
+   
