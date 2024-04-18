@@ -11,6 +11,10 @@ import Connection from "./database/db.js";
 // Importing routes
 import Route from "./routes/route.js";
 
+import dotenv from "dotenv"
+// // to initaialise dotenv
+dotenv.config();
+const PORT = process.env.PORT || 8000;
 // Creating express app
 const app=express();
 
@@ -26,7 +30,7 @@ app.use(express.urlencoded({limit: '100mb'}));
 Connection();
 
 // Defining the port number
-const PORT=8000;
+
 
 // Using the defined routes
 app.use('/',Route);
