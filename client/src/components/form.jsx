@@ -10,7 +10,7 @@ const StyledForm = styled.form`
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color:  rgb(173, 216, 230);
+  background-color:  #173F70;
 `;
 
 const FormGroup = styled.div`
@@ -21,18 +21,33 @@ const FormGroup = styled.div`
 const Label = styled.label`
   display: block;
   margin-bottom: 5px;
+  color: white;
+  font-size: 22px;
 `;
 
 const Input = styled.input`
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  color:black;
+  font-family: monospace;
+
+`;
+const Input1 = styled.input`
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color:white;
 `;
 
 const Button = styled.button`
-  width: 100%;
+  width: 20%;
+  font-size: 22px;
+  height: 45px;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
@@ -55,7 +70,7 @@ const Container = styled.div`
 const Heading = styled.h1`
   text-align: center;
   margin-bottom: 20px;
-  color: #007bff;
+  color: #9ACEF6;
 `;
 
 const TableWrapper = styled.div`
@@ -75,6 +90,7 @@ const Table = styled.table`
 `;
 const Th = styled.th`
   width: 20%; /* Adjust width as needed */
+  color:black;
   border: 1px solid #dddddd;
   text-align: center;
   padding: 15px;
@@ -82,6 +98,7 @@ const Th = styled.th`
   position: sticky;
   top: 0;
   z-index: 1;
+  font-size:22px;
 `;
 
 const Td = styled.td`
@@ -89,6 +106,7 @@ const Td = styled.td`
   border: 1px solid #dddddd;
   text-align: center;
   padding: 2px;
+  font-size:20px;
 `;
 
 const MusicControl = styled.audio`
@@ -131,8 +149,8 @@ const TableRow = styled.tr`
 const LoadingMessage = styled.div`
   text-align: center;
   margin-top: 20px;
-  font-size: 18px;
-  color: red; /* Adjust color as needed */
+  font-size: 22px;
+  color: #D9E68C; /* Adjust color as needed */
 `;
 
 const Gap = styled.div`
@@ -257,7 +275,7 @@ const Form = () => {
         </FormGroup>
         <FormGroup>
           <Label htmlFor="soundFile">Upload Sound File:</Label>
-          <Input type="file" id="soundFile" onChange={base64encode} accept="audio/*" required />
+          <Input1 type="file" id="soundFile" onChange={base64encode} accept="audio/*" required />
         </FormGroup>
         <Button type="submit">Submit</Button>
       </StyledForm>
